@@ -112,18 +112,13 @@ brownie networks add Ethereum ganache host=http://localhost:8545 chainid=1337
 
 And update the brownie config accordingly. There is a `deploy_mocks` script that will launch and deploy mock Oracles, VRFCoordinators, Link Tokens, and Price Feeds on a Local Blockchain.
 
-## Deploy to a testnet / Scripts
+## Deploy Script
 
 ```
-brownie run scripts/1_deploy_lottery.py
-brownie run scripts/2_start_lottery.py
-brownie run scripts/3_enter_lottery.py
-brownie run scripts/4_end_lottery.py
+brownie run scripts/deploy_lottery.py
 ```
 
-This will deploy your lottery, fund it with LINK, start your lottery, you'll enter it, and then end your lottery. You can also work with the console to do these.
-
-You can deploy and work with a local network by deploying mocks.
+You will need LINK and ETH in your wallet to run this script. Visit [the rinkeby faucet](https://docs.chain.link/docs/link-token-contracts#rinkeby) to get LINK and ETH.
 
 ## Testing
 
