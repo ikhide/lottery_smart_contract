@@ -11,7 +11,6 @@ import pytest
 
 
 def test_get_entrance_fee():
-    print('we are om',network.show_active())
     if network.show_active() not in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
         pytest.skip()
     # Arrange
